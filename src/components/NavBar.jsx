@@ -6,7 +6,7 @@ import {ItemListContainer} from '../components/ItemListContainer'
 export const NavBar = () => {
     return (
         <div className='nav'>
-            <Logo />
+            <Logo Logo={"Docta Coffee"}/>
             <Categorias NombreCateg={"Bebidas Calientes"}/>
             <Categorias NombreCateg={"Bebidas Frias"}/>
             <Categorias NombreCateg={"Bakery"}/> 

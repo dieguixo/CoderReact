@@ -1,8 +1,8 @@
 
-export const Logo = () => {
+export const Logo = ({Logo}) => {
     return (
         <div>
-            <img src="../assets/logo2.png" alt="logo" />
+            <p className="Logo">{Logo}</p>
         </div>
     )
 }
