@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.nav {
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(24, 126, 24);
+    position: relative;
+    justify-content: space-between;
+}
+
+.Logo {
+    font-family: cursive;
+    color: blanchedalmond;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+}
+
+.boton {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensaje {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(rgb(12, 74, 14));
+
+}
