@@ -35,9 +35,15 @@
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(rgb(12, 74, 14));
+    color: blanchedalmond;
 
 }
 
 .carrito {
     font-size: 100px;
+}
+
+.cantidad {
+    color: blanchedalmond;
+    text-align: center;
 }
