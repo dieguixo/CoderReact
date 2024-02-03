@@ -9,7 +9,7 @@ export const NavBar = () => {
             <Categorias NombreCateg={"Bebidas Calientes"}/>
             <Categorias NombreCateg={"Bebidas Frias"}/>
             <Categorias NombreCateg={"Bakery"}/> 
-            <CartWidget CartWidget={"Carrito"}/>
+            <CartWidget CartWidget />
         </div>
     )
 }
