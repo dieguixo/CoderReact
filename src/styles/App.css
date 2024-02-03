@@ -32,10 +32,12 @@
 }
 
 .mensaje {
-    font-size: 16px;
+    background-color: rgb(24, 126, 24);
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(rgb(12, 74, 14));
     color: blanchedalmond;
+    padding: 10px;
+    text-align: center;
 
 }
 
