@@ -13,12 +13,13 @@
     justify-content: space-between;
 }
 
-.Logo {
+.logo {
     font-family: cursive;
     color: blanchedalmond;
     font-size: 30px;
     font-weight: bold;
     display: inline;
+    text-decoration: none;
 }
 
 .boton {
@@ -48,4 +49,27 @@
 .cantidad {
     color: blanchedalmond;
     text-align: center;
+}
+
+.itemcount {
+    background-color: brown;
+}
+
+.productCard {
+    width: 150px;
+    height: auto;
+    background-color: rgba(111, 171, 111, 0.664)
+}
+.footer {
+    background-color: green;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: medium;
+    height: 50px;
+    padding-top: 15px;
+    margin-top: 10px;
+}
+.picture{
+    height: 200px;
+    width: auto;
 }

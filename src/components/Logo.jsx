@@ -2,7 +2,7 @@
 export const Logo = ({Logo}) => {
     return (
         <div>
-            <p className="Logo">{Logo}</p>
+            <p className="logo">{Logo}</p>
         </div>
     )
 }
