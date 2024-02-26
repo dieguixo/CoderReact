@@ -23,7 +23,7 @@ export const ItemListContainer = () => {
 
 
     return (
-        <div>
+        <div className="cardContainer">
             <ItemList productos={productos} />
         </div>
     )

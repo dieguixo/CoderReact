@@ -16,7 +16,7 @@ export const ItemDetailsContainer = () => {
             })
     }, [])
     return (
-        <div>
+        <div className="cardContainer">
             <ItemDetail item={item} />
         </div>
     )
