@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useCounter } from "../hooks/useCounter"
 
 export const ItemDetail = ({ item }) => {
-    const { count, increment, decrement, reset } = useCounter(0, item.stock, 1)
+    const { count, sumar, restar, borrar } = useCounter(0, item.stock, 1)
 
     const handleAddToCart = () => {
         console.log(`Estoy pidiendo ${count} ${item.title}`)
@@ -10,34 +10,32 @@ export const ItemDetail = ({ item }) => {
     }
     return (
 
-        <div>
-            <Link to={'/'}>
-                <button></button>
-            </Link>
+        <div className="cardDetail">
 
             <img src={`../img/${item.img}`} alt={`Imagen de ${item.title}`} />
-            <div>
-                <h2>{item.title}</h2>
+            <div className="item">
+                <p>{item.title}</p>
                 <p>Precio: ${item.price}</p>
                 <div>
                     <div>
-                        <button onClick={decrement}>
+                        <button className="boton" onClick={restar}>
                             -
                         </button>
                         <span>{count}</span>
-                        <button onClick={increment}>
+                        <button className="boton" onClick={sumar}>
                             +
                         </button>
-                        <button onClick={reset}>
-                            Reset
+                        <button className="boton" onClick={borrar}>
+                            Borrar
                         </button>
-                        <button onClick={handleAddToCart}>
+                        <button className="boton" onClick={handleAddToCart}>
                             Agregar al pedido
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
     )
