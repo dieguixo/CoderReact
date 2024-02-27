@@ -16,7 +16,6 @@ export const ItemListContainer = () => {
                 } else {
                     setProductos(prods)
                 }
-
             })
             .catch((error) => console.log(error))
     }, [cid])
@@ -24,7 +23,7 @@ export const ItemListContainer = () => {
 
     return (
         <div className="cardContainer">
-            <ItemList productos={productos} />
+            <ItemList productos={productos} className="cardList"/>
         </div>
     )
 }
