@@ -108,6 +108,10 @@
     align-items: center;
     margin-bottom: 30px;
 }
-.item p {
+.itemLink {
     text-decoration: none;
+}
+
+.buttonDetail {
+    justify-items: auto;
 }
