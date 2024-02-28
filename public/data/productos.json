@@ -6,7 +6,8 @@
         "price": 2.00,
         "stock": 10,
         "img": "Americano.jpg",
-        "categoria": "calientes"
+        "categoria": "calientes",
+        "descripcion": "Preparado con dos shots de café y agua caliente"
     },
     {
         "id": "2",
@@ -15,7 +16,9 @@
         "price": 2.30,
         "stock": 15,
         "img": "Latte.jpeg",
-        "categoria": "calientes"
+        "categoria": "calientes",
+        "descripcion": "Preparado con un shot de café y leche vaporizada"
+
 
     },
     {
@@ -25,7 +28,9 @@
         "price": 2.70,
         "stock": 9,
         "img": "Flat white.jpeg",
-        "categoria": "calientes"
+        "categoria": "calientes",
+        "descripcion": "Preparado con dos shots de café y leche vaporizada"
+
 
     },
     {
@@ -35,7 +40,9 @@
         "price": 3.60,
         "stock": 12,
         "img": "iced latte.jpeg",
-        "categoria": "frias"
+        "categoria": "frias",
+        "descripcion": "Preparado con dos shots de café, hielo y leche"
+
 
     },
     {
@@ -45,7 +52,9 @@
         "price": 3.80,
         "stock": 7,
         "img": "espresso tonic.jpeg",
-        "categoria": "frias"
+        "categoria": "frias",
+        "descripcion": "Preparado con dos shots de café, hielo y agua tónica"
+
     },
     {
         "id": "6",
@@ -54,6 +63,8 @@
         "price": 4.50,
         "stock": 10,
         "img": "smoothie.jpg",
-        "categoria": "frias"
+        "categoria": "frias",
+        "descripcion": "Preparado con frutas naturales y zumo de naranja"
+
     }
 ]

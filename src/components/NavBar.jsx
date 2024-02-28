@@ -8,17 +8,18 @@ export const NavBar = () => {
     return (
         <div className='nav'>
             <Logo Logo={"Docta Coffee"}/>
-            <Link to={'/'}>
-                <Categorias NombreCateg={"Ver todas"}/>
-            </Link>
-            <Link to={'/categoria/calientes'}>
-                <Categorias NombreCateg={"Bebidas Calientes"}/>
-            </Link>
-            <Link to={'/categoria/frias'}>
-                <Categorias NombreCateg={"Bebidas Frias"}/>
-            </Link>
+            <div className='Menu'>
+                <Link to={'/'}>
+                    <Categorias NombreCateg={"Ver todas"}/>
+                </Link>
+                <Link to={'/categoria/calientes'}>
+                    <Categorias NombreCateg={"Bebidas Calientes"}/>
+                </Link>
+                <Link to={'/categoria/frias'}>
+                    <Categorias NombreCateg={"Bebidas Frias"}/>           
+                </Link>
+            </div>
                 <CartWidget CartWidget />
-
         </div>
     )
 }

@@ -12,6 +12,9 @@
     position: relative;
     justify-content: space-between;
 }
+.menu {
+    margin-right: 60px;
+}
 
 .logo {
     font-family: cursive;
@@ -28,9 +31,6 @@
     border-radius: 5px;
     background-color: blanchedalmond;
     padding: 5px 10px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px;
 }
 
 .mensaje {
