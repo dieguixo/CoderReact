@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useCounter = (minValue = 1, maxValue = 1, step = 1) => {
+export const useCounter = (minValue = 0, maxValue = 1, step = 1) => {
     const [count, setCount] = useState(minValue)
 
     const sumar = () => {

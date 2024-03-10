@@ -1,13 +1,14 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useCounter } from "../hooks/useCounter"
+import { useCarritoContext } from "../context/CartContext"
 
 export const ItemDetail = ({ item }) => {
-    const { count, sumar, restar, borrar } = useCounter(0, item.stock, 1)
-
-    const handleAddToCart = () => {
-        console.log(`Estoy pidiendo ${count} ${item.title}`)
-        console.log("Producto agregado al pedido")
+  const { addItem } = useCarritoContext()
+  const { count, sumar, restar, borrar } = useCounter(0, item.stock, 1)
+  
+  const handleAddToCart = () => {
+    addItem(item, count)
     }
     return (
         <Card style={{ width: '18rem' }}>
