@@ -1,0 +1,137 @@
+[
+    {
+        "id": "1",
+        "title": "Americano",
+        "size": "Mediano",
+        "price": 2.00,
+        "stock": 10,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/americano.jpg?alt=media&token=2d4f38b5-ee07-445a-913f-ed9999246e07",
+        "categoria": "calientes",
+        "descripcion": "Preparado con dos shots de café y agua caliente"
+    },
+    {
+        "id": "2",
+        "title": "Latte",
+        "size": "Mediano",
+        "price": 2.30,
+        "stock": 15,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/latte.jpeg?alt=media&token=10566cdc-6651-4baa-a6e5-53ffce3d760f",
+        "categoria": "calientes",
+        "descripcion": "Preparado con un shot de café y leche vaporizada"
+
+
+    },
+    {
+        "id": "3",
+        "title": "Flat White",
+        "size": "Mediano",
+        "price": 2.70,
+        "stock": 9,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/flat%20white.jpeg?alt=media&token=6125d2b3-ae4e-4328-a4d1-35a1aa98de2f",
+        "categoria": "calientes",
+        "descripcion": "Preparado con dos shots de café y leche vaporizada"
+
+
+    },
+    {
+        "id": "4",
+        "title": "Iced Latte",
+        "size": "Large",
+        "price": 3.60,
+        "stock": 12,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/iced%20latte.jpeg?alt=media&token=4e8c3730-134b-451d-80e1-747c437486cd",
+        "categoria": "frias",
+        "descripcion": "Preparado con dos shots de café, hielo y leche"
+
+
+    },
+    {
+        "id": "5",
+        "title": "Espresso tonic",
+        "size": "Large",
+        "price": 3.80,
+        "stock": 7,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/espresso%20tonic.jpeg?alt=media&token=5206111a-75bd-42c5-8a87-0e6aaa57cdcd",
+        "categoria": "frias",
+        "descripcion": "Preparado con dos shots de café, hielo y agua tónica"
+
+    },
+    {
+        "id": "7",
+        "title": "Cold Brew",
+        "size": "Large",
+        "price": 3.80,
+        "stock": 6,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/coldbrew.jpeg?alt=media&token=15793191-0ad3-4cff-882d-7c38959bafed",
+        "categoria": "frias",
+        "descripcion": "Café de extracción en frío, hielo y un toque de jengibre"
+
+    },
+    {
+        "id": "8",
+        "title": "Iced chai",
+        "size": "Large",
+        "price": 3.50,
+        "stock": 12,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/iced%20latte.jpeg?alt=media&token=4e8c3730-134b-451d-80e1-747c437486cd",
+        "categoria": "frias",
+        "descripcion": "Concentrado de té chai, hielo y leche"
+
+    },
+    {
+        "id": "9",
+        "title": "dirtychai",
+        "size": "Large",
+        "price": 4.10,
+        "stock": 8,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/dirtychai.jpeg?alt=media&token=5a5347ad-d2da-49a1-8656-60f9ad394913.jpeg",
+        "categoria": "frias",
+        "descripcion": "Concentrado de té chai, hielo, leche y un shot de café espresso"
+
+    },
+    {
+        "id": "10",
+        "title": "Remolacha",
+        "size": "Mediano",
+        "price": 3.00,
+        "stock": 15,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/remolacha.jpeg?alt=media&token=807aa635-f925-42fd-af91-51f1525700de",
+        "categoria": "calientes",
+        "descripcion": "Polvo de remolacha orgánica y leche texturizada"
+
+    },
+    {
+        "id": "11",
+        "title": "Hot choco",
+        "size": "Mediano",
+        "price": 2.50,
+        "stock": 10,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/hotchoco.jpeg?alt=media&token=9c8f4a5f-a266-4820-8315-d7976868a3ae",
+        "categoria": "calientes",
+        "descripcion": "Chocolate semi amargo con leche texturizada"
+
+    },
+    {
+        "id": "12",
+        "title": "Cúrcuma",
+        "size": "Mediano",
+        "price": 3.00,
+        "stock": 19,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/curcuma.jpeg?alt=media&token=7cbaae33-f511-4dbd-ab0f-ae0a912a8eec",
+        "categoria": "calientes",
+        "descripcion": "Cúrcuma en polvo con leche texturizada"
+
+    },
+    {
+        "id": "13",
+        "title": "Matcha",
+        "size": "Mediano",
+        "price": 3.00,
+        "stock": 16,
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-mata.appspot.com/o/matcha.jpeg?alt=media&token=ad8c26f8-55f7-4b41-bac3-02452cce3c44",
+        "categoria": "calientes",
+        "descripcion": "Té verde matcha con leche texturizada"
+
+    }
+
+]
