@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc} from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCf3MukvtRQV_bgCPXG1oXGHP3U1s059h0",
+    apiKey: "",
     authDomain: "react-mata.firebaseapp.com",
     projectId: "react-mata",
     storageBucket: "react-mata.appspot.com",
