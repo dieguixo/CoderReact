@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import { getProduct } from "../firebase/firebase.js"
 import { ItemDetail } from "./ItemDetail.jsx"
 
 export const ItemDetailsContainer = () => {
@@ -7,13 +8,9 @@ export const ItemDetailsContainer = () => {
     const { pid } = useParams()
 
     useEffect(() => {
-        fetch('../data/productos.json')
-            .then(response => response.json())
-            .then(productos => {
-                const prod = productos.find(producto => producto.id == pid)
-                if (prod)
-                    setItem(prod)
-            })
+        getProduct(pid)
+            .then(prod => setItem(prod))
+            .catch(error => console.log(error))
     }, [])
     return (
         <div className="cardContainer">

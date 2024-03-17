@@ -12,14 +12,10 @@ const firebaseConfig = {
     
 const app = initializeApp(firebaseConfig);
 
-//Consultar a la BDD
 const bdd = getFirestore()
 
 /*
-    Create
-    Read
-    Update
-    Delete
+    C R U D
 */
 
 //Crear productos
