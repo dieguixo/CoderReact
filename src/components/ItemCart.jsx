@@ -3,7 +3,7 @@ import { useCounter } from '../hooks/useCounter.jsx'
 
 export const ItemCart = ({ producto }) => {
     const { removeItem, updateItem } = useCarritoContext()
-    const { count, increment, decrement } = useCounter(producto.quantity, producto.stock, 1)
+    const { count, sumar, restar } = useCounter(producto.quantity, producto.stock, 1)
     return (
         <div>
             <div>
@@ -15,14 +15,14 @@ export const ItemCart = ({ producto }) => {
             <div>
                 <button onClick={async () => {
                     updateItem(producto.id, count - 1)
-                    decrement()
+                    restar()
                 }}>
                     -
                 </button>
                 <span>{count}</span>
                 <button onClick={() => {
                     updateItem(producto.id, count + 1)
-                    increment()
+                    sumar()
                 }}>
                     +
                 </button>

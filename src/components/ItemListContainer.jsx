@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
         .then(prods => {
             const productos = prods.filter(prod => prod.stock > 0)
             if (cid) {
-                const productosFiltrados = productos.filter(prod => prod.category == cid)
+                const productosFiltrados = productos.filter(prod => prod.categoria == cid)
                 setProductos(productosFiltrados)
             } else {
                 setProductos(prods)
