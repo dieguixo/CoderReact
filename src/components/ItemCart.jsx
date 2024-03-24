@@ -10,7 +10,7 @@ export const ItemCart = ({ producto }) => {
                 <img src={`${producto.img}`} alt={`Imagen de ${producto.title}`} />
             </div>
             <div>
-                <h3>{producto.title} {producto.size}</h3>
+                <h4>{producto.title}</h4> <h5>{producto.size}</h5>
             </div>
             <div>
                 <button onClick={async () => {

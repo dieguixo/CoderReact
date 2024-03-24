@@ -12,9 +12,11 @@ export const ItemDetail = ({ item }) => {
     addItem(item, count)
     }
     return (
-      <><Link to={'/'}>
+      <>
+      <Link to={'/'}>
         <Button>Cerrar</Button>
-      </Link><Card style={{ width: '18rem' }}>
+      </Link>
+          <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" className='' src={`${item.img}`} alt={`Imagen de ${item.title}`} />
           <Card.Body className="text-center">
             <Card.Title>{item.title}</Card.Title>
@@ -23,7 +25,7 @@ export const ItemDetail = ({ item }) => {
               {item.descripcion}
             </Card.Text>
             <div className='buttonDetail'>
-              <Button variant="success" size="sm" onClick={restar}>-</Button>
+              <Button variant="success" size="sm" onClick={restar}>- </Button>
               <span>  {count}  </span>
               <Button variant="success" size="sm" onClick={sumar}>+</Button>
               <span> </span>
@@ -32,6 +34,7 @@ export const ItemDetail = ({ item }) => {
               <Button variant="success" size="sm" onClick={handleAddToCart}>Agregar</Button>
             </div>
           </Card.Body>
-        </Card></>
+        </Card>
+      </>
     )
   }

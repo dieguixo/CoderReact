@@ -4,7 +4,7 @@ import { ItemList } from "./ItemList"
 import { getProducts } from "../firebase/firebase.js"
 
 export const ItemListContainer = () => {
-    const [productos, setProductos] = useState([])
+    const [products, setProducts] = useState([])
     const { cid } = useParams()
 
     useEffect(() => {
@@ -13,9 +13,9 @@ export const ItemListContainer = () => {
             const productos = prods.filter(prod => prod.stock > 0)
             if (cid) {
                 const productosFiltrados = productos.filter(prod => prod.categoria == cid)
-                setProductos(productosFiltrados)
+                setProducts(productosFiltrados)
             } else {
-                setProductos(prods)
+                setProducts(prods)
             }
 
         })
@@ -25,7 +25,7 @@ export const ItemListContainer = () => {
 
     return (
         <div className="cardContainer">
-            <ItemList productos={productos} className="cardList"/>
+            <ItemList products={products} plantilla="item" className="cardList"/>
         </div>
     )
 }
