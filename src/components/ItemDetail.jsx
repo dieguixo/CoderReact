@@ -6,16 +6,14 @@ import { useCarritoContext } from "../context/CartContext"
 
 export const ItemDetail = ({ item }) => {
   const { addItem } = useCarritoContext()
-  const { count, sumar, restar, borrar } = useCounter(0, item.stock, 1)
+  const { count, sumar, restar, borrar } = useCounter(1, item.stock, 1)
   
   const handleAddToCart = () => {
     addItem(item, count)
     }
     return (
       <>
-      <Link to={'/'}>
-        <Button>Cerrar</Button>
-      </Link>
+
           <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" className='' src={`${item.img}`} alt={`Imagen de ${item.title}`} />
           <Card.Body className="text-center">
@@ -32,7 +30,11 @@ export const ItemDetail = ({ item }) => {
               <Button variant="success" size="sm" onClick={borrar}>Borrar</Button>
               <span> </span>
               <Button variant="success" size="sm" onClick={handleAddToCart}>Agregar</Button>
+                <Link to={'/'}>
+                  <Button variant="success" size="sm" className='Cerrar'>Cerrar</Button>
+                </Link>
             </div>
+
           </Card.Body>
         </Card>
       </>

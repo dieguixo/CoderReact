@@ -7,12 +7,11 @@ export const ItemList = ({ products, plantilla }) => {
             {
                 plantilla === 'Item'
                     ?
-                    products.map(prod => <Item key={prod.id} producto={prod} />)
+                    products.map(prod => <Item key={prod.id} product={prod} />)
                     :
-                    products.map(prod => <ItemCart key={prod.id} producto={prod} />)
+                    products.map(prod => <ItemCart key={prod.id} product={prod} />)
 
             }
         </>
-
     )
 }

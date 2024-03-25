@@ -1,37 +1,33 @@
 import { useCarritoContext } from "../context/CartContext"
 import { useCounter } from '../hooks/useCounter.jsx'
 
-export const ItemCart = ({ producto }) => {
+export const ItemCart = ({ product }) => {
     const { removeItem, updateItem } = useCarritoContext()
-    const { count, sumar, restar } = useCounter(producto.quantity, producto.stock, 1)
+    const { count, sumar, restar } = useCounter(product.quantity, product.stock, 1)
     return (
-        <div>
+        <div className="ItemCart">
             <div>
-                <img src={`${producto.img}`} alt={`Imagen de ${producto.title}`} />
+                <img className="CartImage" src={`${product.img}`} alt={`Imagen de ${product.title}`} />
             </div>
             <div>
-                <h4>{producto.title}</h4> <h5>{producto.size}</h5>
+                <h5>{product.title}</h5>
             </div>
             <div>
-                <button onClick={async () => {
-                    updateItem(producto.id, count - 1)
+                <button className="CartButton" onClick={async () => {
+                    updateItem(product.id, count - 1)
                     restar()
-                }}>
-                    -
-                </button>
+                }}>-</button>
                 <span>{count}</span>
-                <button onClick={() => {
-                    updateItem(producto.id, count + 1)
+                <button className="CartButton" onClick={() => {
+                    updateItem(product.id, count + 1)
                     sumar()
-                }}>
-                    +
-                </button>
+                }}>+</button>
             </div>
             <div>
-                <p>Subtotal: ${producto.price * count}</p>
+                <h8>Subtotal: ${product.price * count}</h8>
             </div>
             <div>
-                <button onClick={() => removeItem(producto.id)}>
+                <button className="CartButton" onClick={() => removeItem(product.id)}>
                     Eliminar
                 </button>
             </div>

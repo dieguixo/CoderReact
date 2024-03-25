@@ -26,7 +26,6 @@ export const CarritoProvider = (props) => { //Forma de proveer el contexto, pued
                 quantity: cantidad
             }
 
-
             setCarrito([...carrito, newItem]) //Guardo en el carrito el nuevo producto
         }
     }

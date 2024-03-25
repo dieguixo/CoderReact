@@ -27,8 +27,7 @@ export const App = () => {
                 </Routes>
                 <Footer />
             </CarritoProvider>    
-        </BrowserRouter>   
+        </BrowserRouter>  
         </>
-        
     )
 }
