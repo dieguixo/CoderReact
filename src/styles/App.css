@@ -94,6 +94,7 @@
         align-items: center;
         margin-bottom: 20px;
       }
+
 .cardList {
     text-decoration: none;
 }
@@ -136,4 +137,7 @@
 .CartButton {
     margin: 8px;
     width: max-content;
+}
+.detalleCarrito {
+    display: flex;
 }
