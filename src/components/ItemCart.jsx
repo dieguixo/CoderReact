@@ -18,7 +18,7 @@ export const ItemCart = ({ product }) => {
                     restar()
                 }}>-</button>
                 <span>{count}</span>
-                <button className="CartButton" onClick={() => {
+                <button className="CartButton" onClick={async () => {
                     updateItem(product.id, count + 1)
                     sumar()
                 }}>+</button>

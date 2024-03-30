@@ -2,6 +2,8 @@ import { useRef } from "react"
 import { useCarritoContext } from "../context/CartContext.jsx"
 import { Link, useNavigate } from "react-router-dom"
 import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from "../firebase/firebase.js"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
  
 export const Checkout = () => {
     const formRef = useRef()
@@ -50,8 +52,6 @@ export const Checkout = () => {
 
     }
     return (
-        <>
-            {
                 carrito.length === 0 ?
                     <>
                         <h2>Para finalizar pedido debe tener productos en el carrito</h2>
@@ -62,20 +62,19 @@ export const Checkout = () => {
                     </>
                     :
                     <div>
-                        <form action="" ref={formRef} onSubmit={handleSubmit}>
-                            <label>Nombre: </label>
-                            <input type="text" name="nombre" />
-                            <label>Apellido: </label>
-                            <input type="text" name="apellido" />
-                            <label>Email: </label>
-                            <input type="email" name="email" />
-                            <label>Telefono: </label>
-                            <input name="telefono" />
-                            <button>Finalizar</button>
-                        </form>
+                    <Form className="Form" onSubmit={handleSubmit}>
+                            <Form.Label>Nombre</Form.Label>
+                            <Form.Control type="text" placeholder="Ingrese su nombre" />
+                            <Form.Label>Apellido</Form.Label>
+                            <Form.Control type="text" placeholder="Ingrese su apellido" />
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Ingrese su email" />
+                            <Form.Label>Teléfono</Form.Label>
+                            <Form.Control type="string" placeholder="Ingrese su telefono" />
+                            <br/>
+                        <Button variant="success" type="submit">
+                            Finalizar
+                        </Button>
+                    </Form>
                     </div>
-            }
-        </>
-
-    )
-}
+            )}

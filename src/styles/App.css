@@ -97,6 +97,7 @@
 
 .cardList {
     text-decoration: none;
+    color: white;
 }
 .item {
     text-decoration: none;
@@ -140,4 +141,11 @@
 }
 .detalleCarrito {
     display: flex;
+}
+.Form {
+    margin-left: 50px;
+    width: 500px;
+}
+.Form button {
+    align-items: center;
 }

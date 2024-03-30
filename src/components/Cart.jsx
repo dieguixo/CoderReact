@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import { useCarritoContext } from "../context/CartContext"
 import { ItemList } from "./ItemList"
+import Button from 'react-bootstrap/Button';
+
 
 export const Cart = () => {
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
@@ -23,19 +25,17 @@ export const Cart = () => {
                         <div>
                             <br />
                             <h5>Resumen de la compra: $ {totalPrice()}</h5>
-                            <button onClick={emptyCart}>
-                                Vaciar Carrito
-                            </button>
-                            <button>
+                            <Button onClick={emptyCart} variant="success">Vaciar Carrito</Button>{' '}
+                            <Button variant="success">
                                 <Link className="cardList" to={'/'}>
                                     Continuar Comprando
                                 </Link>
-                            </button>
-                            <button>
+                            </Button>{' '}
+                            <Button variant="success" className="cardList">
                                 <Link className="cardList" to={'/checkout'}>
                                     Finalizar compra
                                 </Link>
-                            </button>
+                            </Button>{' '}
                         </div>
                     </div>
 
