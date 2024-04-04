@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from "../firebase/firebase.js"
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { toast } from "react-toastify";
  
 export const Checkout = () => {
     const formRef = useRef()
@@ -25,7 +26,15 @@ export const Checkout = () => {
                     prodBDD.stock -= prodCarrito.quantity
                     updateProduct(prodBDD.id, prodBDD)
                 } else {
-                    (`Lo siento, ${prod.title} está sin disponibilidad en este momento.`, {
+                    toast.info(`Lo siento, nos hemos quedado sin ${prod.title} .`, {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark"
                     })
                     aux.filter(prod => prod.id != prodBDD.id) //Elimino el producto del carrito al tener stock suficiente
                 }
@@ -38,15 +47,27 @@ export const Checkout = () => {
 
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleDateString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
             .then(ordenCompra => {
-                (`🛒 Muchas gracias por su pedido, su número de orden es: ${ordenCompra.id} por un total de $${totalPrice()}. En cuanto esté listo lo llamaremos por su nombre`, {
+                toast.success(`Muchas gracias por su pedido, en breve lo llamaremos por su nombre para que pueda retirarlo del mostrador. Su número de pedido es: ${ordenCompra.id} por un total de $${totalPrice()}.`, {
+                    position: "top-right",
+                    autoClose: false,
+                    closeOnClick: true,
+                    draggable: true,
+                    theme: "dark"
                 })
                 emptyCart()
                 e.target.reset()
                 navigate('/')
             })
             .catch(e => {
-                (`Error al generar el pedido: ${e}`, {
-                    
+                toast.error(`Hubo un error al generar el pedido: ${e}`, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark"
                 })
             })
 

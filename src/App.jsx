@@ -1,4 +1,5 @@
 import './styles/App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {NavBar} from './components/NavBar'
@@ -9,6 +10,8 @@ import { Checkout } from './components/Checkout'
 import { ItemDetailsContainer } from './components/ItemDetailsContainer.jsx'
 import { NotFound } from './components/NotFound'
 import { CarritoProvider } from './context/CartContext.jsx'
+import { ToastContainer } from 'react-toastify'
+
 
 
 export const App = () => {
@@ -17,6 +20,7 @@ export const App = () => {
         <BrowserRouter>
             <CarritoProvider>
                 <NavBar className="Nav" />
+                <ToastContainer />
                 <Routes>
                     <Route path='/' element={<ItemListContainer />} />
                     <Route path='/categoria/:cid' element={<ItemListContainer />} />
