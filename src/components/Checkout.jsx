@@ -47,8 +47,8 @@ export const Checkout = () => {
 
         createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleDateString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
             .then(ordenCompra => {
-                toast.success(`Muchas gracias por su pedido, en breve lo llamaremos por su nombre para que pueda retirarlo del mostrador. Su número de pedido es: ${ordenCompra.id} por un total de $${totalPrice()}.`, {
-                    position: "top-right",
+                toast.success(`Muchas gracias por tu pedido. En breve te llamaremos para que puedas retirarlo del mostrador. Tu código de pedido es el: ${ordenCompra.id} por un total de $${totalPrice()}.`, {
+                    position: "top-center",
                     autoClose: false,
                     closeOnClick: true,
                     draggable: true,
@@ -60,7 +60,7 @@ export const Checkout = () => {
             })
             .catch(e => {
                 toast.error(`Hubo un error al generar el pedido: ${e}`, {
-                    position: "top-right",
+                    position: "top-center",
                     autoClose: 5000,
                     hideProgressBar: false,
                     closeOnClick: true,

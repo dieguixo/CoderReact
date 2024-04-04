@@ -14,7 +14,7 @@ export const ItemDetail = ({ item }) => {
     return (
       <>
 
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '15rem' }}>
           <Card.Img variant="top" className='DetailImage' src={`${item.img}`} alt={`Imagen de ${item.title}`} />
           <Card.Body className="text-center">
             <Card.Title>{item.title}</Card.Title>
